@@ -19,6 +19,23 @@
 
 
 
+(*
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] This file was adapted from the 2018 version of the automatic installer
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace]of FeynCalc:
+https://github.com/FeynCalc/feyncalc/blob/master/install.m
+
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] This installer is covered by the GNU General Public License 3.
+
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 1990-2018 Rolf Mertig
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 1997-2018 Frederik Orellana
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 2014-2018 Vladyslav Shtabovenko
+
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 2018-2020 Joydeep Chakrabortty
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 2018-2020 Supratim D. Bakshi
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 2018-2020 Sunando Kr Patra
+*)
+
+
 (* ::Input::Initialization:: *)
 InstallCoDEx::notcomp="Your Mathematica version is older than 10. Installation aborted!";
 InstallCoDEx::failed="Download of `1` failed. Installation aborted!";
@@ -132,20 +149,3 @@ Module[{unzipDir,tmpzip,gitzip,packageName,packageDir,fullPath,strDisableWarning
 	WriteString["stdout","\nInstallation complete! Loading CoDEx ... \n"];
 	Get["CoDEx`"];
 ];
-
-
-(*
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] This file was adapted from the 2018 version of the automatic installer
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace]of FeynCalc:
-https://github.com/FeynCalc/feyncalc/blob/master/install.m
-
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] This installer is covered by the GNU General Public License 3.
-
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 1990-2018 Rolf Mertig
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 1997-2018 Frederik Orellana
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 2014-2018 Vladyslav Shtabovenko
-
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 2018-2020 Joydeep Chakrabortty
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 2018-2020 Supratim D. Bakshi
-\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] Copyright (C) 2018-2020 Sunando Kr Patra
-*)
